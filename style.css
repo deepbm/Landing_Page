@@ -3,3 +3,72 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* jumbotron */
+.jumbotron {
+  height: 550px;
+  padding: 20px;  /* 마진 상쇄 방지 */
+  background: linear-gradient(to bottom, #499add, #4e61c0);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.jumbotron-text {
+  float: left;
+  margin-top: 100px; 
+  color: white;
+}
+
+.jumbotron-text h2 {
+  font-size: 48px;
+}
+
+.jumbotron-text h4 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.jumbotron-img {
+  float: right;
+  margin-top: 95px;
+}
+
+/* button */
+.btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+}
+
+
+/* responsive web */
+@media only screen and (max-width : 992px) {
+  .jumbotron-text {
+    float: none;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .jumbotron-img {
+    float: none;
+    width: 260px;
+    display: block;
+    margin: auto;
+    margin-top: 26px;
+  }
+}
