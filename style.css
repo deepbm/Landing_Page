@@ -44,6 +44,7 @@
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .btn:hover {
@@ -58,6 +59,10 @@
 
 /* responsive web */
 @media only screen and (max-width : 992px) {
+  .jumbotron {
+    position: relative;
+  }
+  
   .jumbotron-text {
     float: none;
     margin-top: 50px;
@@ -70,5 +75,15 @@
     display: block;
     margin: auto;
     margin-top: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width : 521px) {
+  .jumbotron {
+    height: 650px;
   }
 }
