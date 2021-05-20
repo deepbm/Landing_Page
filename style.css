@@ -57,32 +57,6 @@
 }
 
 
-/* responsive web */
-@media only screen and (max-width : 992px) {
-  .jumbotron {
-    position: relative;
-  }
-  
-  .jumbotron-text {
-    float: none;
-    margin-top: 50px;
-    text-align: center;
-  }
-
-  .jumbotron-img {
-    float: none;
-    width: 260px;
-    display: block;
-    margin: auto;
-    margin-top: 26px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-}
-
-
 /* caption */
 .caption {
   height: 300px;
@@ -113,7 +87,34 @@
 
 
 /* responsive web */
+@media only screen and (max-width : 992px) {
+  /*jumbotron */
+  .jumbotron {
+    position: relative;
+  }
+  
+  .jumbotron-text {
+    float: none;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .jumbotron-img {
+    float: none;
+    width: 260px;
+    display: block;
+    margin: auto;
+    margin-top: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+
 @media only screen and (max-width : 521px) {
+  /* jumbotron */
   .jumbotron {
     height: 650px;
   }
