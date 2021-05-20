@@ -86,6 +86,43 @@
 }
 
 
+/* service */
+.service {
+  height: 400px;
+  padding: 20px;
+  background-color: #4E61C0;
+  color: white;
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.service-items div {
+  display: inline-block;
+  padding: 20px;
+}
+
+.service-icon {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #4E61C0;
+  padding: 15px;
+  padding-top: 28px;
+  font-size: 45px;
+}
+
+.service-items h5 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+
 /* responsive web */
 @media only screen and (max-width : 992px) {
   /*jumbotron */
@@ -109,6 +146,16 @@
     bottom: 0;
     left: 0;
     right: 0;
+  }
+
+
+  /* service */
+  .service {
+    height: auto;
+  }
+  
+  .service-items div {
+    display: block;
   }
 }
 
