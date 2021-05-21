@@ -123,6 +123,92 @@
 }
 
 
+/* portfolio */
+.portfolio {
+  height: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.card-group {
+  margin-top: 20px;
+}
+
+.card-group .card-img1 {
+  width: 50%;
+  height: 350px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/portfolio-1.jpg);
+  background-size: cover;
+  float: left;
+  position: relative;
+}
+
+.card-group .card-img2 {
+  width: 50%;
+  height: 350px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/portfolio-2.jpg);
+  background-size: cover;
+  float: left;
+  position: relative;
+}
+
+.card-group .card-img3 {
+  width: 50%;
+  height: 350px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/portfolio-3.jpg);
+  background-size: cover;
+  float: left;
+  position: relative;
+}
+
+.card-group .card-img4 {
+  width: 50%;
+  height: 350px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/portfolio-4.jpg);
+  background-size: cover;
+  float: left;
+  position: relative;
+}
+
+.card-group::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.card-group .card-text {
+  color: white;
+  padding: 30px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.card-group .card-text h4 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* animation */
+.white-box {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  border: 0px solid white;
+  transition: all 0.3s;
+}
+
+.white-box:hover {
+  border: 20px solid white;
+}
+
+
 /* responsive web */
 @media only screen and (max-width : 992px) {
   /*jumbotron */
@@ -153,16 +239,25 @@
   .service {
     height: auto;
   }
-  
+
   .service-items div {
     display: block;
   }
 }
 
 
-@media only screen and (max-width : 521px) {
+@media only screen and (max-width : 768px) {
   /* jumbotron */
   .jumbotron {
     height: 650px;
+  }
+
+  /* portfolio */
+  .card-group .card-img1,
+  .card-group .card-img2,
+  .card-group .card-img3,
+  .card-group .card-img4 {
+    float: none;
+    width: 100%;
   }
 }
